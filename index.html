@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <meta charset="utf-8">
+    <head>
+        <title>Soundcloud Equilizer</title>
+        <script src="js/jquery.js"></script>
+        <script src="http://connect.soundcloud.com/sdk.js"></script>
+        <script src="js/app.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <style type="text/css">
+            #track_name {
+                display: none;   
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="song-info" class="text-center">
+            <a id="linkback"><h1 id="track_name"></h1></a>
+        </div>
+        <canvas id="visual"></canvas>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><audio class=hidden src="" preload="auto" controls id="player"></audio></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="songURL" placeholder="Paste a URL to a soundcloud track and press the play button!" aria-describedby="playbutton">
+                    <span class="input-group-addon glyphicon glyphicon-play" id="playbutton"></span>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1">
+                <a href="" id="linkback"><img src="images/soundcloud.png"></a>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="https://www.soundcloud.com"><img src="images/powered.png"></a>
+        </div>
+    </body>
+</html>
